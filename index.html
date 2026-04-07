@@ -1,347 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Delfin Marco Tumulak | Full-Stack PHP Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="assets/css/style.css"/>
-</head>
-<body>
-
-<!-- PRELOADER -->
-<div id="preloader">
-  <div class="preloader-inner">
-    <div class="preloader-logo">&lt;DM /&gt;</div>
-    <div class="preloader-bar"><div class="preloader-fill"></div></div>
-  </div>
-</div>
-
-<!-- CURSOR -->
-<div id="cursor"></div>
-<div id="cursor-follower"></div>
-
-<!-- NAV -->
-<nav id="navbar">
-  <div class="nav-brand">&lt;Delfin /&gt;</div>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#about" onclick="closeNav()">About</a></li>
-    <li><a href="#services" onclick="closeNav()">Services</a></li>
-    <li><a href="#projects" onclick="closeNav()">Projects</a></li>
-    <li><a href="#why" onclick="closeNav()">Why Me</a></li>
-    <li><a href="#contact" onclick="closeNav()">Contact</a></li>
-  </ul>
-  <div class="hamburger" id="hamburger" onclick="toggleNav()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <canvas id="particles-canvas"></canvas>
-  <div class="hero-content fade-in">
-    <div class="hero-badge"><span class="blink-dot"></span> Available for Freelance Work</div>
-    <h1>Hi, I'm <span class="typed-name"></span><br/>Tumulak</h1>
-    <p>Full-Stack PHP Developer who builds <strong>fast, secure, and scalable systems</strong> — from Admin Dashboards to Hospital Management Platforms.</p>
-    <div class="hero-btns">
-      <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hire Me</a>
-      <a href="#projects" class="btn btn-outline"><i class="fas fa-code"></i> View My Work</a>
-    </div>
-    <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-text fade-in">
-        <div class="section-label">About Me</div>
-        <h2 class="section-title">Building Systems That <span style="color:var(--accent)">Actually Work</span></h2>
-        <p>I'm a Full-Stack PHP Developer with a passion for building reliable, high-performance web systems. I specialize in crafting admin dashboards, inventory platforms, and healthcare management systems that are secure, fast, and easy to use.</p>
-        <p>My approach combines clean code, solid architecture, and a strong focus on the client's real-world needs — delivering solutions that scale.</p>
-        <div class="skills">
-          <span class="skill-tag">PHP</span>
-          <span class="skill-tag">Laravel</span>
-          <span class="skill-tag">MySQL</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">HTML & CSS</span>
-          <span class="skill-tag">Bootstrap</span>
-          <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">Git & GitHub</span>
-          <span class="skill-tag">jQuery</span>
-          <span class="skill-tag">Linux / VPS</span>
-        </div>
-      </div>
-      <div class="fade-in">
-        <div class="stats">
-          <div class="stat-card">
-            <div class="num" data-target="3">0</div>
-            <div class="label">Years Experience</div>
-          </div>
-          <div class="stat-card">
-            <div class="num" data-target="20">0</div>
-            <div class="label">Projects Delivered</div>
-          </div>
-          <div class="stat-card">
-            <div class="num" data-target="100">0</div>
-            <div class="label">Client Satisfaction %</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-  <div class="container">
-    <div class="fade-in section-header">
-      <div class="section-label">What I Do</div>
-      <h2 class="section-title">Services I Offer</h2>
-      <p class="section-sub">From concept to deployment, I build web systems tailored to your business needs.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card fade-in">
-        <div class="service-icon">🖥️</div>
-        <h3>Admin Dashboard Development</h3>
-        <p>Custom, responsive admin panels with role-based access control, real-time data, and intuitive UI for managing your business operations.</p>
-      </div>
-      <div class="service-card fade-in">
-        <div class="service-icon">📦</div>
-        <h3>Inventory Management Systems</h3>
-        <p>Full-featured inventory solutions with stock tracking, automated alerts, supplier management, and detailed reporting.</p>
-      </div>
-      <div class="service-card fade-in">
-        <div class="service-icon">🏥</div>
-        <h3>Hospital & Clinic Systems</h3>
-        <p>End-to-end healthcare platforms covering patient records, appointments, billing, and staff management — built for reliability.</p>
-      </div>
-      <div class="service-card fade-in">
-        <div class="service-icon">🔒</div>
-        <h3>Secure Web Applications</h3>
-        <p>Security-first development with proper authentication, input validation, encrypted data, and protection against common vulnerabilities.</p>
-      </div>
-      <div class="service-card fade-in">
-        <div class="service-icon">🔗</div>
-        <h3>REST API Development</h3>
-        <p>Well-structured, documented REST APIs for mobile apps, third-party integrations, and microservice architectures.</p>
-      </div>
-      <div class="service-card fade-in">
-        <div class="service-icon">🚀</div>
-        <h3>Deployment & Maintenance</h3>
-        <p>VPS setup, server configuration, CI/CD pipelines, and ongoing maintenance to keep your systems running smoothly.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- PROJECTS -->
 <section id="projects">
   <div class="container">
     <div class="fade-in section-header">
       <div class="section-label">My Work</div>
       <h2 class="section-title">Featured Projects</h2>
-      <p class="section-sub">A selection of systems I've designed, built, and deployed for real-world use.</p>
+      <p class="section-sub">A selection of real-world websites and systems I've designed and built for clients.</p>
     </div>
-    <div class="projects-grid">
-      <div class="project-card fade-in">
+
+    <!-- Filter Buttons -->
+    <div class="project-filters fade-in">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="wordpress">WordPress</button>
+      <button class="filter-btn" data-filter="php">PHP System</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- PHP PROJECT -->
+      <div class="project-card fade-in" data-category="php">
         <div class="project-thumb">🏥</div>
         <div class="project-body">
-          <h3>Hospital Management System</h3>
-          <p>A complete system for managing patient records, doctor schedules, billing, and pharmacy — used by a regional clinic.</p>
+          <h3>Paglaum MBA – Microinsurance Platform</h3>
+          <p>Full website for Paglaum Mutual Benefit Association, Inc. — a cooperative microinsurance platform serving members with life insurance, accident benefits, and retirement savings in the Philippines.</p>
           <div class="tech-tags">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">Bootstrap</span>
-          </div>
-          <a href="#" class="btn btn-outline btn-sm">View Project</a>
-        </div>
-      </div>
-      <div class="project-card fade-in">
-        <div class="project-thumb">📦</div>
-        <div class="project-body">
-          <h3>Smart Inventory System</h3>
-          <p>Multi-branch inventory management with barcode scanning, stock alerts, purchase orders, and sales reporting.</p>
-          <div class="tech-tags">
+            <span class="tech-tag">WordPress</span>
             <span class="tech-tag">PHP</span>
             <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Insurance</span>
           </div>
-          <a href="#" class="btn btn-outline btn-sm">View Project</a>
+          <a href="https://mba1.paglaum.coop/" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Live</a>
         </div>
       </div>
-      <div class="project-card fade-in">
-        <div class="project-thumb">🖥️</div>
+
+      <!-- WORDPRESS PROJECTS -->
+      <div class="project-card fade-in" data-category="wordpress">
+        <div class="project-thumb">🏗️</div>
         <div class="project-body">
-          <h3>Enterprise Admin Dashboard</h3>
-          <p>A modular admin dashboard with analytics, user management, audit logs, and role-based permissions for a logistics company.</p>
+          <h3>Trass Construction PH</h3>
+          <p>Corporate website for one of the Philippines' leading Triple-A rated construction companies, showcasing large-scale industrial, infrastructure, and architectural projects.</p>
           <div class="tech-tags">
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">jQuery</span>
-            <span class="tech-tag">Chart.js</span>
-          </div>
-          <a href="#" class="btn btn-outline btn-sm">View Project</a>
-        </div>
-      </div>
-      <div class="project-card fade-in">
-        <div class="project-thumb">🔗</div>
-        <div class="project-body">
-          <h3>REST API Backend Service</h3>
-          <p>A secure, scalable REST API powering a mobile POS application — with JWT auth, rate limiting, and full documentation.</p>
-          <div class="tech-tags">
+            <span class="tech-tag">WordPress</span>
             <span class="tech-tag">PHP</span>
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">JWT</span>
-            <span class="tech-tag">Postman</span>
+            <span class="tech-tag">Construction</span>
           </div>
-          <a href="#" class="btn btn-outline btn-sm">View Project</a>
+          <a href="https://trassconstruction.com/" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Live</a>
         </div>
       </div>
+
+      <div class="project-card fade-in" data-category="wordpress">
+        <div class="project-thumb">👔</div>
+        <div class="project-body">
+          <h3>JES Human Resources Management</h3>
+          <p>Website for a licensed Philippine recruitment agency connecting overseas Filipino workers with international job opportunities across Europe, including Italy and Serbia.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">Recruitment</span>
+          </div>
+          <a href="https://jeshumanresource.com/" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Live</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in" data-category="wordpress">
+        <div class="project-thumb">🤖</div>
+        <div class="project-body">
+          <h3>RisingPoint Technologies</h3>
+          <p>Website for an AI automation agency helping SMBs automate workflows through AI conversational agents, business process automation, and intelligent cloud/ERP solutions.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">AI & Tech</span>
+          </div>
+          <a href="https://www.risingpoint.io/" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Live</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in" data-category="wordpress">
+        <div class="project-thumb">✝️</div>
+        <div class="project-body">
+          <h3>Peculiar Christian Church of God</h3>
+          <p>Church website for Peculiar Christian Church in Stockton, California — featuring worship information, sermons, community events, and pastoral guidance.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">Non-profit</span>
+          </div>
+          <a href="https://impeculiar.org/" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Live</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in" data-category="wordpress">
+        <div class="project-thumb">🚗</div>
+        <div class="project-body">
+          <h3>RC Detailings</h3>
+          <p>Professional auto detailing business website showcasing services, booking information, and portfolio for a car detailing company.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">Business</span>
+          </div>
+          <a href="https://rcdetailings.com/" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Live</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in" data-category="wordpress">
+        <div class="project-thumb">🧠</div>
+        <div class="project-body">
+          <h3>Shallom LLC – Mental Health Services</h3>
+          <p>Healthcare website for Shallom LLC, a psychiatric and mental health practice in Pennsylvania offering evaluations, medication management, and therapy for all ages.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">Healthcare</span>
+          </div>
+          <a href="https://shallomllc.com/" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Live</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in" data-category="wordpress">
+        <div class="project-thumb">🏠</div>
+        <div class="project-body">
+          <h3>WellServe Home Care</h3>
+          <p>Website for a home care agency providing person-centered habilitation services, daily living support, and community inclusion programs for individuals with special needs.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">Home Care</span>
+          </div>
+          <a href="https://wellservehc.com/" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Live</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in" data-category="wordpress">
+        <div class="project-thumb">💊</div>
+        <div class="project-body">
+          <h3>American Caring Home Health Care</h3>
+          <p>Website for a Las Vegas-based home health agency offering skilled nursing, physical therapy, occupational therapy, and home health aide services.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">Health Care</span>
+          </div>
+          <a href="https://american-caring.com/" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Live</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in" data-category="wordpress">
+        <div class="project-thumb">🚑</div>
+        <div class="project-body">
+          <h3>Medtransport-512</h3>
+          <p>Website for a non-emergency medical transportation company in Iowa and Nebraska, offering safe and reliable transport for medical appointments and wheelchair-accessible services.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">Transport</span>
+          </div>
+          <a href="https://medtransport-512.com/" target="_blank" class="btn btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Live</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
-
-<!-- WHY ME -->
-<section id="why">
-  <div class="container">
-    <div class="fade-in section-header">
-      <div class="section-label">Why Choose Me</div>
-      <h2 class="section-title">What Sets Me Apart</h2>
-    </div>
-    <div class="why-grid">
-      <div class="why-card fade-in">
-        <div class="icon">⚡</div>
-        <h3>Fast Delivery</h3>
-        <p>I respect deadlines and deliver on time without cutting corners on quality.</p>
-      </div>
-      <div class="why-card fade-in">
-        <div class="icon">🔒</div>
-        <h3>Security First</h3>
-        <p>Every system I build follows security best practices from day one.</p>
-      </div>
-      <div class="why-card fade-in">
-        <div class="icon">🧹</div>
-        <h3>Clean Code</h3>
-        <p>Maintainable, well-documented code that your future team will thank you for.</p>
-      </div>
-      <div class="why-card fade-in">
-        <div class="icon">🤝</div>
-        <h3>Ongoing Support</h3>
-        <p>I don't disappear after launch — I provide continued support and improvements.</p>
-      </div>
-    </div>
-
-    <div class="fade-in section-header" style="margin-top:4rem;">
-      <div class="section-label">Testimonials</div>
-      <h2 class="section-title">What Clients Say</h2>
-    </div>
-    <div class="testimonials">
-      <div class="testimonial fade-in">
-        <div class="stars">★★★★★</div>
-        <p>"Delfin delivered our hospital system ahead of schedule and exceeded all our expectations. The system is fast, reliable, and the staff adopted it quickly. Highly recommended!"</p>
-        <div class="testimonial-author">
-          <div class="avatar">RV</div>
-          <div class="author-info">
-            <div class="name">Ricardo V.</div>
-            <div class="role">Clinic Administrator</div>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial fade-in">
-        <div class="stars">★★★★★</div>
-        <p>"Our inventory used to be a mess. Delfin built us a system that tracks everything in real time. The ROI was immediate. Great communication throughout the project."</p>
-        <div class="testimonial-author">
-          <div class="avatar">MA</div>
-          <div class="author-info">
-            <div class="name">Maria A.</div>
-            <div class="role">Operations Manager</div>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial fade-in">
-        <div class="stars">★★★★★</div>
-        <p>"Professional, skilled, and easy to work with. The API he built for our app is rock solid. We've had zero downtime in 8 months. Will hire again for sure."</p>
-        <div class="testimonial-author">
-          <div class="avatar">JL</div>
-          <div class="author-info">
-            <div class="name">James L.</div>
-            <div class="role">Startup Founder</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="fade-in">
-        <div class="section-label">Get In Touch</div>
-        <h2 class="section-title">Let's Work Together</h2>
-        <div class="contact-info">
-          <p>Have a project in mind? I'd love to hear about it. Send me a message and let's build something great together.</p>
-          <div class="contact-links">
-            <a href="https://github.com/delfinmarcotumulak" target="_blank" class="contact-link">
-              <i class="fab fa-github"></i>
-              github.com/delfinmarcotumulak
-            </a>
-            <a href="mailto:your@email.com" class="contact-link">
-              <i class="fas fa-envelope"></i>
-              your@email.com
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="fade-in">
-        <form id="contactForm" onsubmit="handleSubmit(event)">
-          <div class="form-row">
-            <div class="input-group">
-              <input type="text" id="name" placeholder=" " required />
-              <label for="name">Your Name</label>
-            </div>
-            <div class="input-group">
-              <input type="email" id="email" placeholder=" " required />
-              <label for="email">Your Email</label>
-            </div>
-          </div>
-          <div class="input-group">
-            <input type="text" id="subject" placeholder=" " required />
-            <label for="subject">Subject</label>
-          </div>
-          <div class="input-group">
-            <textarea id="message" placeholder=" " required></textarea>
-            <label for="message">Tell me about your project...</label>
-          </div>
-          <button type="submit" class="btn btn-primary" id="submitBtn" style="width:100%; justify-content:center;">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BACK TO TOP -->
-<button id="backToTop" onclick="scrollToTop()" title="Back to top">
-  <i class="fas fa-arrow-up"></i>
-</button>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 <strong>Delfin Marco Tumulak</strong> · Full-Stack PHP Developer ·
-    <a href="https://github.com/delfinmarcotumulak" target="_blank">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-  </p>
-</footer>
-
-<script src="assets/js/main.js"></script>
-</body>
-</html>
