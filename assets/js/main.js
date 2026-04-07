@@ -207,27 +207,46 @@ function scrollToTop() {
 }
 
 /* ── CONTACT FORM ── */
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
   const btn = document.getElementById('submitBtn');
   const original = btn.innerHTML;
+  const form = e.target;
 
   // Loading state
   btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
   btn.disabled = true;
 
-  // Simulate sending
-  setTimeout(() => {
-    btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-    btn.style.background = 'linear-gradient(135deg,#10b981,#059669)';
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
 
+    if (response.ok) {
+      // Success
+      btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+      btn.style.background = 'linear-gradient(135deg,#10b981,#059669)';
+      form.reset();
+      setTimeout(() => {
+        btn.innerHTML = original;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 4000);
+    } else {
+      throw new Error('Failed');
+    }
+  } catch (error) {
+    // Error state
+    btn.innerHTML = '<i class="fas fa-times"></i> Failed to send. Try again.';
+    btn.style.background = 'linear-gradient(135deg,#ef4444,#dc2626)';
     setTimeout(() => {
       btn.innerHTML = original;
       btn.style.background = '';
       btn.disabled = false;
-      e.target.reset();
-    }, 3000);
-  }, 1500);
+    }, 4000);
+  }
 }
 
 /* ── TILT EFFECT ON CARDS ── */
